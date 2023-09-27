@@ -1,13 +1,13 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--WHITE);
-  color: --SLATE;
+  color: #434455;
 }
 
 :root {
   --NAVY-BLUE: #2e2f42;
   --IRIS: #4d5ae5;
-  --OCEAN: #4d5ae5;
+  --OCEAN: #404bbf;
   --WHITE: #fff;
   --CLOUD: #f4f4fd;
   --SLATE: #434455;
@@ -46,6 +46,16 @@ body {
   letter-spacing: 0.02em;
 }
 
+.menu-link:hover,
+.menu-link:focus {
+  color: #404bbf;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: #404bbf;
+}
+
 .address {
   font-style: normal;
 }
@@ -59,6 +69,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 /*================/HEADER=================*/
 
 /*================HERO=================*/
@@ -84,6 +95,7 @@ body {
 .button {
   font-family: Roboto, sans-serif;
   background-color: var(--IRIS);
+  color: #ffffff;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -94,10 +106,7 @@ body {
 
 .button:hover,
 .button:focus {
-  border-radius: 4px;
-  border: 1px solid var(--CORNFLOWER);
-  background: var(--CLOUD);
-  background: var(--OCEAN);
+  background: #404bbf;
 }
 /*================/HERO=================*/
 
@@ -112,7 +121,7 @@ body {
 }
 
 .description {
-  color: var(--SLAT);
+  color: var(--SLATE);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -133,19 +142,15 @@ body {
   text-transform: capitalize;
 }
 
-.list-icon {
-  width: 360px;
-  height: 300px;
-}
 /*================/SECTION-2=================*/
 
 /*================SECTION-3=================*/
-.secyion3 {
-  background-color: (--CLOUD);
+.section-three {
+  background-color: #f4f4fd;
 }
-.list-icon-sect-3 {
-  width: 264px;
-  height: 260px;
+
+.list-item {
+  background-color: #ffffff;
 }
 /*================/SECTION-3=================*/
 
@@ -180,10 +185,22 @@ body {
 /*================/FOOTER=================*/
 
 /*================PORTFOLIO=================*/
-.projects-icon {
-  width: 360px;
-  height: 300px;
-  flex-shrink: 0;
+.button-portfolio {
+  color: #4d5ae5;
+  background-color: (--CLOUD);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: #f4f4fd;
+  cursor: pointer;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+  color: #ffffff;
+  background-color: #404bbf;
 }
 
 .projects-title {
@@ -192,10 +209,11 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02em;
 }
 
 .projects-descr {
+  color: var(--SLATE);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
